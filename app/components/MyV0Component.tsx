@@ -1,62 +1,28 @@
-// you can overwrite this entire file with your v0 Component.
-// just copy and paste the "React" output over the entire file.
-
-import Link from "next/link";
-import React from "react";
-import {V0Logo} from "./symbols";
-
-function TestComponent() {
+/**
+ * v0 by Vercel.
+ * @see https://v0.dev/t/ooyliqJj1yz
+ * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
+ */
+export default function Component() {
   return (
-    <div
-      style={{
-        display: "flex",
-        height: "100%",
-        justifyContent: "space-between",
-        flexDirection: "column",
-        width: "100%",
-      }}
-    >
-      <h3
-        style={{
-          maxWidth: "11em",
-        }}
-      >
-        This would be a pretty good place for a{" "}
-        <Link href="https://v0.dev/" target="_blank" rel="noopener noreferrer">
-          v0 component
-        </Link>
-        , wouldn't it?
-      </h3>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "flex-end",
-          width: "100%",
-        }}
-      >
-        <p
-          style={{
-            maxWidth: "20em",
-          }}
-        >
-          Go make one, then paste it into{" "}
-          <code
-            style={{
-              fontFamily: "var(--font-geist-mono)",
-              fontWeight: 500,
-              fontSize: "0.95em",
-              fontFeatureSettings: "'ss09'",
-            }}
-          >
-            app/components/MyV0Component.tsx
-          </code>
-        </p>
-
-        <V0Logo />
+    <div className="bg-white dark:bg-gray-950 rounded-lg shadow-lg p-6 max-w-md mx-auto">
+      <h1 className="text-2xl font-bold mb-4">Dog Walking Schedule</h1>
+      <div className="grid grid-cols-2 gap-4">
+        <div className="font-medium">Monday</div>
+        <div className="text-gray-500 dark:text-gray-400">7am - 8am, 5pm - 6pm</div>
+        <div className="font-medium">Tuesday</div>
+        <div className="text-gray-500 dark:text-gray-400">7am - 8am, 5pm - 6pm</div>
+        <div className="font-medium">Wednesday</div>
+        <div className="text-gray-500 dark:text-gray-400">7am - 8am, 5pm - 6pm</div>
+        <div className="font-medium">Thursday</div>
+        <div className="text-gray-500 dark:text-gray-400">7am - 8am, 5pm - 6pm</div>
+        <div className="font-medium">Friday</div>
+        <div className="text-gray-500 dark:text-gray-400">7am - 8am, 5pm - 6pm</div>
+        <div className="font-medium">Saturday</div>
+        <div className="text-gray-500 dark:text-gray-400">9am - 10am, 4pm - 5pm</div>
+        <div className="font-medium">Sunday</div>
+        <div className="text-gray-500 dark:text-gray-400">9am - 10am, 4pm - 5pm</div>
       </div>
     </div>
-  );
+  )
 }
-
-export default TestComponent;
